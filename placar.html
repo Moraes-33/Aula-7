@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="placar.css">
+</head>
+<body>
+    <header><h1>Placar Eletrônico</h1></header>
+
+    <div class="placar">
+        <div id="time1" class="time">
+            <input type="text" id="nomeTime1" placeholder="Nome do Time 1" oninput="atualizarNome(1)">
+            : <span id="score1">0</span>
+        </div>
+        <div id="time2" class="time">
+            <input type="text" id="nomeTime2" placeholder="Nome do Time 2" oninput="atualizarNome(2)">
+            : <span id="score2">0</span>
+        </div>
+    </div>
+
+    <div>
+        <button onclick="incrementarPlacar(1)">Gol Time 1</button>
+        <button onclick="incrementarPlacar(2)">Gol Time 2</button>
+        <button onclick="zerarPlacar()">Finalizar partida</button>
+        <button onclick="novoJogo()">Iniciar novo jogo</button>
+    </div>
+
+    <div id="resultado" class="resultado"></div>
+    <div id="mensagemGanhando" class="mensagem-ganhando"></div>
+
+    <script src="placar.js"></script>
+</body>
+</html>

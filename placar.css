@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #222325;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    padding-top: 30px; 
+}
+
+h1 {
+    color: #0080ff;
+    font-size: 4rem; 
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+}
+
+.placar {
+    display: flex;
+    justify-content: space-around;
+    width: 60%; 
+    margin-bottom: 40px;
+    border: 2px solid #3F3F3F;
+    border-radius: 10px;
+    padding: 30px;
+    background-color: #3F3F3F;
+    font-size: 3rem; 
+}
+
+.time {
+    font-size: 2.5rem; 
+    color: #ffffff;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    position: relative; 
+}
+
+input {
+    border: none;
+    border-bottom: 2px solid #3F3F3F;
+    background: transparent;
+    font-size: 1.8rem;
+    color: #ffffff;
+    margin-right: 10px;
+    padding: 5px;
+    outline: none;
+}
+
+input:focus {
+    border-bottom-color: #0d38e3;
+}
+
+span {
+    font-size: 3rem; 
+    color: #fffb00;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+button {
+    background-color: #8b8c89;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 10px;
+}
+
+button:hover {
+    background-color: #6c757d;
+    transform: scale(1.1);
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+.resultado {
+    margin-top: 40px;
+    font-size: 2.5rem; 
+    color: #fffb00;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .placar {
+        width: 80%;
+    }
+
+    button {
+        width: 100%;
+        padding: 12px 0;
+        font-size: 1rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .time {
+        font-size: 2rem;
+    }
+
+    span {
+        font-size: 2.5rem;
+    }
+}
+
+
+.mensagem-ganhando {
+    font-size: 2rem;
+    color: #fffb00; 
+    font-weight: bold;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+}
